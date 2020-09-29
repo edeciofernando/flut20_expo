@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "945461687184",
+    "firebase_url": "https://expo-mate-edecio.firebaseio.com",
+    "project_id": "expo-mate-edecio",
+    "storage_bucket": "expo-mate-edecio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945461687184:android:21120ad0add04fa4ca7915",
+        "android_client_info": {
+          "package_name": "com.example.expo_mate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945461687184-tv2pj4rppj96vludll2b9jv4rai6qe34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJgDGVDlXkqDdOMVALzWg3VTUfdXhjfTw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "945461687184-tv2pj4rppj96vludll2b9jv4rai6qe34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
