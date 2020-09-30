@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:expo_mate/form_expo.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -9,6 +10,16 @@ class HomePage extends StatelessWidget {
         title: Text('Material App Bar'),
       ),
       body: _body(context),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => FormExpo()),
+          );
+        },
+        tooltip: 'Nova Exposição',
+        child: const Icon(Icons.add_a_photo),
+      ),
     );
   }
 
@@ -31,7 +42,13 @@ class HomePage extends StatelessWidget {
                     itemCount: expos.length,
                     itemBuilder: (context, index) {
                       return ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: NetworkImage(
+                            expos[index].data['foto'],
+                          ),
+                        ),
                         title: Text(expos[index].data['local']),
+                        subtitle: Text(expos[index].data['cidade']),
                       );
                     },
                   );
